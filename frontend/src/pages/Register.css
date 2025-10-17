@@ -1,0 +1,147 @@
+.register-container {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.register-box {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.register-left {
+  flex: 1;
+  padding: 40px;
+  background: linear-gradient(135deg, rgba(106, 17, 203, 0.9), rgba(37, 117, 252, 0.9));
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.register-left p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+
+.register-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+
+.register-right {
+  flex: 1;
+  padding: 140px 40px 40px 40px; /* Push below 100px header */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  color: #222;
+  border-radius: 20px; /* ✅ Rounded corners */
+}
+.register-right h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+  margin-top: 40px;
+   text-align: center;  
+}
+
+
+.btn-outline, .btn-filled {
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #fff;
+  color: #6a11cb;
+}
+
+.btn-filled {
+  background: #fff;
+  color: #2575fc;
+}
+
+.btn-filled:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.register-right {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-right h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.register-right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-right input {
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.register-btn {
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #6a11cb;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.register-btn:hover {
+  background: #2575fc;
+}
+
+.login-text {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.login-link {
+  color: #6a11cb;
+  cursor: pointer;
+  text-decoration: underline;
+}

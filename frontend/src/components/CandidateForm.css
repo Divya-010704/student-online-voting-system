@@ -1,0 +1,90 @@
+/* CandidateForm.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f1f5f9;
+}
+
+.candidate-form-container {
+  width: 400px;
+  margin: 80px auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.candidate-form-container h2 {
+  text-align: center;
+  color: #08123b;
+  margin-bottom: 10px;
+}
+
+.form-divider {
+  border: none;
+  border-top: 2px solid #d1d5db;
+  margin-bottom: 20px;
+}
+
+.candidate-form-container label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.candidate-form-container input,
+.candidate-form-container select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #f9fafb;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.candidate-form-container input:focus,
+.candidate-form-container select:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+.candidate-form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.candidate-form-actions button {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.candidate-form-actions button[type="submit"] {
+  background-color: #2563eb;
+  color: white;
+}
+
+.candidate-form-actions button[type="submit"]:hover {
+  background-color: #1d4ed8;
+}
+
+.candidate-form-actions button[type="button"] {
+  background-color: #e5e7eb;
+  color: #111827;
+}
+
+.candidate-form-actions button[type="button"]:hover {
+  background-color: #d1d5db;
+}

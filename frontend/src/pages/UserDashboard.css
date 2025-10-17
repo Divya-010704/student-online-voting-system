@@ -1,0 +1,138 @@
+.user-sidebar {
+  width: 220px;
+  height: calc(100vh - 100px);
+  position: fixed;
+  top: 100px; /* Aligned exactly below the header */
+  left: 0;
+  background: linear-gradient(to bottom right, #2c3e50, #1c2833);
+  color: #ffffff;
+  padding: 30px 20px;
+  box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+.student-dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(to right, #e8f0ff, #ffffff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+.welcome-box {
+  background-color: #ffffff;
+  border-left: 8px solid #003366;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease;
+}
+
+.welcome-box h1 {
+  font-size: 32px;
+  color: #002147;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.welcome-box p {
+  font-size: 18px;
+  margin: 12px 0;
+  color: #333;
+}
+
+.welcome-box p strong {
+  color: #003366;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-box {
+    padding: 25px;
+  }
+
+  .welcome-box h1 {
+    font-size: 26px;
+  }
+
+  .welcome-box p {
+    font-size: 16px;
+  }
+}
+
+/* Sidebar Heading */
+.user-sidebar h2 {
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  height: 100px;
+  line-height: 100px;
+  font-weight: 600;
+  
+  border-radius: 8px;
+  margin-bottom: 30px;
+ 
+}
+
+/* Sidebar Navigation */
+.user-sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.user-sidebar li {
+  margin-bottom: 16px;
+}
+
+/* Navigation Buttons */
+.user-sidebar button {
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #ecf0f1;
+  width: 100%;
+  text-align: left;
+  padding: 12px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.user-sidebar button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #1abc9c;
+  transform: translateX(6px);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Logout Button */
+.user-sidebar button.logout {
+  color: #f46a6a;
+  font-weight: 600;
+}
+
+.user-sidebar button.logout:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #ff4d4d;
+  transform: translateX(6px);
+}

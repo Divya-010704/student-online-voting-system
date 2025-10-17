@@ -1,0 +1,153 @@
+/* Page Container */
+.candidates-page {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px;
+  background: linear-gradient(to right, #f5f9ff, #ffffff);
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeInPage 1s ease-in;
+}
+
+/* Page Title */
+.page-title {
+  font-size: 38px;
+  text-align: center;
+  color: #002855;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.page-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #0056b3;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Each Group Section */
+.candidate-group-container {
+  background-color: #ffffff;
+  border-left: 8px solid #0056b3;
+  border-radius: 15px;
+  padding: 25px 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInCard 0.8s ease;
+}
+
+.candidate-group-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Group Title */
+.candidate-group-container h3 {
+  font-size: 24px;
+  color: #003366;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Candidate List */
+.candidate-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Each Candidate Item */
+.candidate-item {
+  background: linear-gradient(to right, #e8f0fe, #f1f8ff);
+  border: 1px solid #d0e1f9;
+  border-radius: 12px;
+  padding: 14px 20px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #002244;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 85, 150, 0.05);
+}
+
+.candidate-item:hover {
+  background: linear-gradient(to right, #d6eaff, #e9f4ff);
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+/* Candidate Name */
+.candidate-item strong {
+  font-size: 17px;
+  color: #0b2e59;
+}
+
+/* No Candidates Message */
+.no-candidates {
+  font-style: italic;
+  text-align: center;
+  color: #6c757d;
+  padding: 15px 0;
+  font-size: 16px;
+  animation: fadeInText 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInCard {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .candidates-page {
+    padding: 20px;
+  }
+
+  .candidate-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .candidate-item strong {
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,74 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Form card styling */
+.login-container > div {
+  background: linear-gradient(to right, #6dd5ed, #2193b0); /* Light blue gradient */
+  padding: 20px;
+  border-radius: 40px 0 10px 10px; /* Rounded top-left corner */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  height: 450px;
+  text-align: center;
+  color: #fff;
+  margin-top: 120px; /* Ensures it appears below 100px header */
+}
+
+
+/* Title */
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Inputs */
+.login-container input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1) inset;
+}
+
+/* Button */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #000;
+  color: #4fc3f7;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+  background: #333;
+}
+
+/* Register link */
+.login-container p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-container span {
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}

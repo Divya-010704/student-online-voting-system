@@ -1,0 +1,13 @@
+/* Ensure page takes full height */
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout wrapper */
+.main-content {
+  min-height: calc(100vh - 140px); /* assuming header + footer = 140px total */
+  padding: 20px;
+  background-color: #f9f9f9;
+}
